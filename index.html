@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+		<style>
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+/*
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+*/
+		body {
+			background-color: #303039;
+			margin: 0px;
+		}
+		#menu {
+			height: 100vh;
+			display: flex;
+      align-items: center;
+		}
+		.menu-item {
+			color: #ff5357;
+			font-size: clamp(3rem, 8vw, 8rem);
+			font-family: monospace;
+			
+			display: block;
+			text-decoration: none;
+			padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+			transition: opacity 400ms ease;
+		}
+		#menu-items {
+			margin-left: clamp(4rem, 20vw, 48rem);
+		}
+    #menu-items:hover > .menu-item {
+			opacity: 0.3;
+		}
+		#menu-items:hover > .menu-item:hover {
+			opacity: 1;
+			color: #f63e41;
+		}
+	</style>
+</head>
+<body>
+  <div id="menu">
+	  <div id="menu-items">
+	  	<a href="/" class="menu-item">Home</a>
+	  	<a href="/" class="menu-item">Contact</a>
+	  	<a href="/" class="menu-item">Links</a>
+	  </div>
+  </div>
+<footer style="height:100px; width: 100%; background-color:#303031; color: #ff5357; font-size: 5pt; ">
+	<a href="/home/"><h1>Footer</h1></a>
+</footer>
+</body>
